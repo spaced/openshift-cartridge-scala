@@ -25,6 +25,7 @@ function tidy {
     rm -rf $OPENSHIFT_SCALA_LOG_DIR/*
     rm -rf $OPENSHIFT_TMP_DIR/*
     rm -rf "$OPENSHIFT_HOMEDIR"/.ivy2/*
+    rm -rf "$OPENSHIFT_REPO_DIR"/project/boot/*
 }
 
 function catchall {
