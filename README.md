@@ -1,6 +1,6 @@
-# OpenShift Cartridge to deploy Reactive Applications
+# OpenShift Cartridge to deploy Applications using sbt launcher
 
-With this cartridge you can easily deploy Scala, Spray, Play and Akka applications, or any SBT based applications, on the [Openshift PaaS](https://www.openshift.com/).
+With this cartridge you can easily deploy Scala, Spray, Play and Akka applications, or any java applications, on the [Openshift PaaS](https://www.openshift.com/).
 using sbt launcher
 ## Usage
 
@@ -8,17 +8,17 @@ Openshift environment:
 
 ```bash
 rhc app create demoreactiveapp \
-http://cartreflect-claytondev.rhcloud.com/reflect?github=spaced/openshift-cartridge-scala
+http://cartreflect-claytondev.rhcloud.com/reflect?github=spaced/openshift-cartridge-scala-sbt-launcher
 ```
 
 That's all! Now all that is left is to wait for the deployment to complete ;)
 
 ## Note
 
-Deployment can sometimes be a rather slow process. Be patient with it and check on the deployment process with following command:
+First Deployment can sometimes be a rather slow process. Be patient with it and check on the deployment process with following command:
 
 ```bash
- ssh id_to_replace@demoreactiveapp-$yournamespace.rhcloud.com "tail -f scala/logs/scala.log"
+ ssh id_to_replace@yourapp-$yournamespace.rhcloud.com "tail -f scala/logs/scala.log"
  ```
 
 ## Deployment process
