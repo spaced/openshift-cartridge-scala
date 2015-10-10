@@ -1,7 +1,7 @@
 Name: scala
 Cartridge-Short-Name: SCALA
-Display-Name: scala sbt runner Cartridge
-Description: "A scala sbt runner cartridge"
+Display-Name: scala sbt launcher Cartridge
+Description: "A scala sbt launcher cartridge"
 Version: '1.0.0'
 License: "MIT"
 Vendor: google
