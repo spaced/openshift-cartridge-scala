@@ -32,12 +32,14 @@ sbt @application.properties
 ```
     
 ## Setup your app
+https://github.com/spaced/openshift-cartridge-example-project
+
 Add dependency
 ```
 "org.scala-sbt" % "launcher-interface" % "1.0.0" % "provided",
 ```
 and implement a Runner extends xsbti.AppMain (see also http://www.scala-sbt.org/0.13/docs/Launcher-Getting-Started.html)
-Example: https://github.com/wkorfhage/sbt-launch-deployment-example/blob/master/hello.project/src/main/scala/example/HelloRunner.scala
+Example: https://github.com/spaced/openshift-cartridge-example-project/blob/master/src/main/scala/com/example/XMain.scala
 Customize your application.properties
 If you use sbt as build tool, add following to your sbt build:
 ```
