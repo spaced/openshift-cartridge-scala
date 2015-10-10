@@ -1,3 +1,3 @@
 #!/bin/bash
 
-activator run
+sbt @application.properties
