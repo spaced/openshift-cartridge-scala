@@ -15,8 +15,14 @@ libraryDependencies ++= {
     "io.spray"            %%   "spray-testkit" % sprayV  % "test",
     "com.typesafe.akka"   %%  "akka-actor"    % akkaV,
     "com.typesafe.akka"   %%  "akka-testkit"  % akkaV   % "test",
+    "org.scala-sbt"       % "launcher-interface" % "1.0.0" % "provided",
     "org.specs2"          %%  "specs2"        % "2.4.1" % "test"
   )
 }
+
+
+publishTo := Some(Resolver.file("file", new File("localrepo")))
+
+publishMavenStyle := true
 
 Revolver.settings
