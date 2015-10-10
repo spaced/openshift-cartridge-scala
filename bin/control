@@ -16,10 +16,6 @@ function restart {
     start
 }
 
-function build {
-    # nothing
-}
-
 function tidy {
     shopt -s dotglob
     rm -rf $OPENSHIFT_SCALA_LOG_DIR/*
@@ -40,7 +36,7 @@ case "$1" in
   reload)      catchall ;;
   tidy)        tidy ;;
   pre-build)   catchall ;;
-  build)       build ;;
+  build)       catchall ;;
   deploy)      catchall ;;
   post-deploy) catchall ;;
   *)           exit 0
